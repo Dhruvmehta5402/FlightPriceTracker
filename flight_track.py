@@ -17,12 +17,13 @@ for span in soup.findAll('span', attrs={'class':'js-label js-price _itL _ibU _ib
 
 price = price.replace(',', '')
 
+body = f"Hello! The price is now within your range: {price}. Buy it quick before it rises again."
+message = 'Subject: {}\n\n{}'.format('Flight Price', body)
+
 if int(price) > 9999 and int(price) <= 80000:
     s = smtplib.SMTP('smtp.gmail.com', 587)
     s.starttls()
     s.login("", "")
-    #price_code = price.encode('utf-8')
-    message = f"Hello the price is {price}"
     print(message)
     s.sendmail("", "dhruvmehtakolkata@gmail.com", message)
     print('Email has been sent')

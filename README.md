@@ -18,6 +18,9 @@ $ pip install -r requirements.txt
 ```
 * It is recommended that you create a new Gmail account to send the emails from since you will need to change the Security options to Allow access to Less Secure Apps.  
 * As you can see, at the top of the code in ```fligt_track.py``` there are a number of constants. You will want to change these constants based on your personal preferences.  
+  * *CHECKING_INTERVAL* is the interval/frequency at which the price will be checked and emails will be sent to you.  
+  * *NUMBER_OF_CHECKS* is the number of times the price will be checked and emails will be sent to you.
+  * So, the program *approximately* runs for ```CHECKING_INTERVAL * NUMBER_OF_CHECKS``` seconds.  
 * You will need to fill in in *SENDER_EMAIL* and *SENDER_PASSWORD* with the Gmail account you are sending the emails from. You will also need to fill in *RECEIVER_EMAIL* with the email you want to 
 send the prices to.  
 * Currently, the code tracks prices for flights from CCU to ORD at particular dates. To change this, you will need to change the URL with the destination and dates you want to, as well 

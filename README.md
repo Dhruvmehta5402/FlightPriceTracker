@@ -4,6 +4,12 @@ This is a Python bot for tracking flight prices via email.
 ## Functioning  
 When you run the code, it will send you email updates about whether the flight prices are within your range. The emails will be sent with live prices at a frequency defined by you. So, if you receive the email, you should start packing your bags. :partying_face:
 
+To run the code on the terminal type out:
+```bash
+$ python flight_track.py
+```
+You may see some warnings but those are just issues with chrome driver and do not affect the functioning of the code.
+
 ## Requirements
 * You will need to install the dependencies required for this project by:
 

@@ -16,5 +16,5 @@ $ pip install -r requirements.txt
 send the prices to.  
 * Currently, the code tracks prices for flights from CCU to ORD at particular dates. To change this, you will need to change the URL with the destination and dates you want to, as well 
 as the attrs attributes of the findAll function.  
-* The ```chromedriver.exe``` should also be placed in the same folder as your code.
+* The ```chromedriver.exe``` should also be placed in the same folder as your code. If it is not, you will need to change the line ```driver = webdriver.Chrome()```to ```driver = webdriver.Chrome('/path/to/chromedriver') ```
 

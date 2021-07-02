@@ -13,8 +13,9 @@ PRICE_LIMIT = int(input("Enter price limit: "))
 SENDER_EMAIL = input("Enter Sender Email: ")
 SENDER_PASSWORD = input("Enter Sender Email Password: ")
 RECEIVER_EMAIL = input("Enter Receiver Email: ")
-CHECKING_INTERVAL = 60
-NUMBER_OF_CHECKS = 2
+CHECKING_INTERVAL = int(input("Enter Checking Interval in seconds: "))
+CHECKING_DURATION = int(input("Enter Checking Duration in seconds: "))
+NUMBER_OF_CHECKS = int(CHECKING_DURATION / CHECKING_INTERVAL)
 
 for i in range(NUMBER_OF_CHECKS):
     driver = webdriver.Chrome()

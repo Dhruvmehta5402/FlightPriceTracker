@@ -9,10 +9,10 @@ destination = input("Enter destination: ")
 dep_date = input("Enter departure date in YYYY-MM-DD format: ")
 arrival_date = input("Enter arrival date in YYYY-MM-DD format: ")
 URL = f'https://www.kayak.co.in/flights/{departure}-{destination}/{dep_date}/{arrival_date}?sort=bestflight_a'
-PRICE_LIMIT = 100000
-SENDER_EMAIL = ''
-SENDER_PASSWORD = ''
-RECEIVER_EMAIL = 'dhruvmehtakolkata@gmail.com'
+PRICE_LIMIT = int(input("Enter price limit: "))
+SENDER_EMAIL = input("Enter Sender Email: ")
+SENDER_PASSWORD = input("Enter Sender Email Password: ")
+RECEIVER_EMAIL = input("Enter Receiver Email: ")
 CHECKING_INTERVAL = 60
 NUMBER_OF_CHECKS = 2
 
